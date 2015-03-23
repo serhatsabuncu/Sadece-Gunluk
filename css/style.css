@@ -1,0 +1,182 @@
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%}
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #e8e8e8;
+}
+
+
+a:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+a:hover, a:active {
+    outline: 0;
+}
+
+.entry, .hentry {
+    *zoom: 1;
+}
+
+.entry:before, .hentry:before, .entry:after, .hentry:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.entry:after, .hentry:after {
+    clear: both;
+}
+
+.entry-content {
+    margin-bottom: 26px;
+    margin-bottom: 1.625rem;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.625;
+    letter-spacing: .015em;
+}
+
+.entry-content p>a, .entry-content li>a {
+    border-bottom: 1px dotted #a2a2a2;
+}
+
+.entry-content p>a:hover, .entry-content li>a:hover {
+    border-bottom-style: solid;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header-title {
+    margin: 30px 0 0;
+    text-align: center;
+}
+.header-title h1 {
+    margin: 10px 20px;
+    font-size: 28px;
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #555;
+}
+
+.header-title h2 {
+    margin: 0;
+    font-size: 18px;
+    font-size: 1.525rem;
+    color: #888;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (max-width:30em) {
+    .header-title h1 {
+        font-size: 60px;
+        font-size: 1.75rem;
+    }
+
+    .header-title h2 {
+        font-size: 60px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width:62.5em) {
+    .header-title h1 {
+        font-size: 60px;
+        font-size: 3.75rem;
+    }
+
+    .header-title h2 {
+        font-size: 60px;
+        font-size: 2.55rem;
+    }
+}
+
+@media only screen and (min-width:48em) {
+
+    .header-title h1 {
+        font-size: 48px;
+        font-size: 4rem;
+    }
+
+    .header-title h2 {
+        font-size: 30px;
+        font-size: 2rem;
+    }
+
+    .header-title h2 a {
+        color: #fff;
+    }
+}
+.header-title {
+    position: absolute;
+    top: 0;
+    display: table;
+    width: 100%;
+    height: 250px;
+    margin-top: 0;
+    overflow: hidden;
+}
+.header-title .header-title-wrap {
+    display: table-cell;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.header-title h1 {
+    margin: 10px;
+    margin: 10px 60px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.6);
+}
+
+.header-title h1 a {
+    color: #fff;
+}
+
+.header-title h2 {
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header-image {
+    position: relative;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    min-height: 250px;
+    overflow: hidden;
+}
+
+.header-image:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34, 34, 34, 0.3);
+    content: '';
+}
+.header-image img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-width: 50%;
+    min-height: 50%;
+    margin: auto;
+}
